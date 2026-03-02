@@ -52,7 +52,7 @@ export const WishlistProvider = ({ children }: { children: ReactNode }) => {
 export function useWishList() {
   const context = useContext(WishlistContext);
   if (context === undefined) {
-    throw new Error("useEishList must be used within a WishListProvider");
+    throw new Error("useWishList must be used within a WishListProvider");
   }
   return context;
 }
